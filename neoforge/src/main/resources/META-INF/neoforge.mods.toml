@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
+loaderVersion = "[4,)"
 issueTrackerURL = "https://github.com/mahmudindev/mcmod-forestbiomesdimension/issues"
 license = "ARR"
 
@@ -14,36 +14,39 @@ Add forest biomes as separate dimension.
 logoFile = "assets/forestbiomesdimension/icon.png"
 
 [[dependencies.forestbiomesdimension]]
-modId = "forge"
-mandatory = true
-versionRange = "[47,)"
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.forestbiomesdimension]]
 modId = "minecraft"
-mandatory = true
-versionRange = "[1.20.1,)"
+type = "required"
+versionRange = "[1.21,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.forestbiomesdimension]]
 modId = "modifiedbiomesource"
-mandatory = true
+type = "required"
 versionRange = "[0.0.1,)"
 ordering = "NONE"
 side = "SERVER"
 
 [[dependencies.forestbiomesdimension]]
 modId = "dimensionfixer"
-mandatory = true
+type = "required"
 versionRange = "[0.0.9,)"
 ordering = "NONE"
 side = "SERVER"
 
 [[dependencies.forestbiomesdimension]]
 modId = "worldportal"
-mandatory = true
+type = "required"
 versionRange = "[0.0.9,)"
 ordering = "NONE"
 side = "SERVER"
+
+[[mixins]]
+config = "forestbiomesdimension.mixins.json"
