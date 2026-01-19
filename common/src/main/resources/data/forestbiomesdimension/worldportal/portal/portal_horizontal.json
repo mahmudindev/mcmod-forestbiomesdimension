@@ -1,0 +1,8 @@
+{
+  "frame_top_right": "minecraft:oak_log",
+  "frame_top_left": "minecraft:oak_log",
+  "frame_bottom_right": "minecraft:coarse_dirt",
+  "frame_bottom_left": "minecraft:coarse_dirt",
+  "mode": "worldportal:horizontal",
+  "destination": "forestbiomesdimension:overworld"
+}
