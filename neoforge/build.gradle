@@ -36,9 +36,6 @@ dependencies {
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
-
-    modImplementation ":modifiedbiomesource-neoforge:${rootProject.modifiedbiomesource_version}"
-    include ":modifiedbiomesource-neoforge:${rootProject.modifiedbiomesource_version}"
 }
 
 processResources {
