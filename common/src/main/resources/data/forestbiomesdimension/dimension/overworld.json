@@ -5,19 +5,10 @@
     "biome_source": {
       "type": "modifiedbiomesource:minecraft_multi_noise",
       "preset": "minecraft:overworld",
+      "mod_support": true,
       "allows": "#minecraft:is_forest",
-      "fallback": {
-        "biome": "minecraft:forest",
-        "parameters": {
-          "continentalness": 0,
-          "depth": 0,
-          "erosion": 0,
-          "humidity": 0,
-          "offset": 0,
-          "temperature": 0,
-          "weirdness": 0
-        }
-      }
+      "denies": null,
+      "fallback": "minecraft:forest"
     },
     "settings": "minecraft:overworld"
   }
